@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complex Form Example</title>
+</head>
+<body>
+<h1>Registrácia</h1>
+<form action="/submit_form" method="post">
+    <label for="firstname">Meno:</label>
+    <input type="text" id="firstname" name="firstname" required>
+    <label for="lastname">Priezvisko:</label>
+    <input type="text" id="lastname" name="lastname" required>
+    <br><br>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="password">Heslo:</label>
+    <input type="password" id="password" name="password" required minlength="8">
+    <br><br>
+
+    <label for="birthdate">Dátum narodenia:</label>
+    <input type="date" id="birthdate" name="birthdate">
+    <br><br>
+
+    <label>Pohlavie:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Muž</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Žena</label>
+    <br><br>
+
+    <label for="phone">Telefónne číslo:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    <br><br>
+
+    <label>Interesy:</label>
+    <input type="checkbox" id="coding" name="interest" value="coding">
+    <label for="coding">Programovanie</label>
+    <input type="checkbox" id="sports" name="interest" value="sports">
+    <label for="sports">Športy</label>
+    <br><br>
+
+    <label for="bio">Životopis:</label>
+    <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+    <br><br>
+
+    <input type="submit" value="Registrovať">
+</form>
+</body>
+</html>
