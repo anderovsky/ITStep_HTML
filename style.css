@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    color: seagreen;
+    font-weight: lighter;
+}
+
+h2 {
+    color: darkmagenta;
+    text-align: center;
+}
+
+li {
+    display: flex;
+    color: dimgray;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+section {
+    background-color: beige;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px;
+}

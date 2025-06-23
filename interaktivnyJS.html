@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Interaktívna stránka</title>
+</head>
+<body>
+
+<h2>Interaktívna stránka</h2>
+
+<input type="text" id="textInput" placeholder="Zadajte text">
+<button onclick="addText()">Pridať</button>
+
+<ul id="zoznam"></ul>
+
+<script>
+    function addText() {
+        const vstup = document.getElementById('textInput');
+        const text = vstup.value.trim();
+
+        if (text !== '') {
+            const zoznam = document.getElementById('zoznam');
+            const polozka = document.createElement('li');
+            polozka.textContent = text;
+
+            polozka.addEventListener('click', () => {
+                zoznam.removeChild(polozka);
+            });
+
+            zoznam.appendChild(polozka);
+            vstup.value = ''; // vyčistenie poľa
+        }
+    }
+</script>
+
+</body>
+</html>

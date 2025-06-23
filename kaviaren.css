@@ -1,0 +1,53 @@
+header {
+    text-align: center;
+    color: white;
+    background-color: dimgray;
+    padding: 5px;
+}
+
+.center {
+    margin: auto;
+    width: 30%;
+}
+
+input {
+    display: block;
+}
+
+fieldset {
+    border: none;
+}
+
+div {
+    margin-top: 30px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: dimgray;
+    padding: 5px;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px;
+}
+
+input {
+    display: block;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+label {
+    display: block;
+    width: 100%;
+}
