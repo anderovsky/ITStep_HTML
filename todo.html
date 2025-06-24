@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>TODO App</h2>
+
+    <input type="text" id="todoInput" placeholder="Zadajte úlohu">
+    <button onclick="addTodo()">Pridať</button>
+
+    <ul id="zoznam"></ul>
+</body>
+<script>
+    function addTodo() {
+        const vstup = document.getElementById('todoInput');
+        const text = vstup.value.trim();
+
+        if (text !== '') {
+            const zoznam = document.getElementById('zoznam');
+            const polozka = document.createElement('li');
+            const btnOdstranit = document.createElement('li');
+            polozka.textContent = text;
+
+            polozka.addEventListener('click', () => {
+                zoznam.removeChild(polozka);
+            });
+
+            zoznam.appendChild(polozka);
+            vstup.value = ''; // vyčistenie poľa
+        }
+    }
+</script>
+</html>
